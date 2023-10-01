@@ -1,4 +1,4 @@
-import './globals.css'
+import './styles/globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Link from 'next/link'
@@ -19,14 +19,16 @@ export default function RootLayout({
     <html lang="en">
       <body className={inter.className}>
         {/* 네비게이터 */}
-        <div className='w-full h-16 bg-red-500 flex flex-row justify-end px-40 fixed top-0 items-center opacity-20'>
-            <Link href={"/"}><div className='w-20 h-10 mr-10 justify-center items-center flex bg-blue-50'>home</div></Link>
-            <Link href={"/list"}><div className='w-20 h-10 mr-10  justify-center items-center flex bg-blue-100'>list</div></Link>
-            <Link href={"/cart"}><div className='w-20 h-10 mr-10  justify-center items-center flex bg-blue-200'>cart</div></Link>
-            <Link href={"/cart/payment"}><div className='w-20 h-10 mr-10  justify-center items-center flex bg-blue-300'>payment</div></Link>
+        <div className='w-full h-12  flex flex-row justify-end px-40 fixed top-0 items-center right-0 text-xs'>
+            <Link href={"/"}><div className='w-20 h-8 mr-7 justify-center items-center flex bg-blue-50'>home</div></Link>
+            <Link href={"/list"}><div className='w-20 h-8 mr-7  justify-center items-center flex bg-blue-100'>list</div></Link>
+            <Link href={"/cart"}><div className='w-20 h-8 mr-7  justify-center items-center flex bg-blue-200'>cart</div></Link>
+            <Link href={"/cart/payment"}><div className='w-20 h-8 mr-7  justify-center items-center flex bg-blue-300'>payment</div></Link>
         </div>
-
+        <div className='mt-12'>
         {children}
+
+        </div>
       </body>
     </html>
   )

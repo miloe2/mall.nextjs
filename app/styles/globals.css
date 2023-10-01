@@ -1,6 +1,15 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+@import './fonts.css';
+
+*{
+  font-family: 'NEXON Lv1 Gothic OTF', sans-serif; /* 웹폰트 적용 */
+}
+
+body{
+  overflow-y: scroll;
+}
 
 
 /* 
