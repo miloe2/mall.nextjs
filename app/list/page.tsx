@@ -2,6 +2,8 @@
 
 import React, { useState } from 'react';
 import Image from 'next/image';
+import { connectDB } from '../../src/util/database';
+
 
 let 상품 = ['tomatose', 'pasta', 'coconut'];
 
@@ -22,7 +24,7 @@ const List = () => {
         }
         setAmtArr(copy)
     }
-    
+
     
 
     return (
